@@ -42,7 +42,7 @@ RegRU.prototype.check = function(dname){
 
 	request.post("https://api.reg.ru/api/regru2/domain/check",
 		{form:form}, function(error,res,body) {
-			if(error){ d.reject(err);}
+			if(error){ d.reject(error);}
 			d.resolve(body);
 		}
 	);
