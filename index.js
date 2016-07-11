@@ -50,10 +50,14 @@ RegRU.prototype.check = function(dname){
 	return d.promise;
 }
 
-RegRU.prototype.create = function(domain, data, nss, org){
+RegRU.prototype.create = function(domain, data, period, nss, org){
 
 	var contacts = {};
 	var d = Q.defer();
+
+	if(domain.indexOf('.ru')|| domain.indexOf('.su')){
+		period = 1;
+	}
 
 	var domainzone = {
 
@@ -400,6 +404,7 @@ RegRU.prototype.create = function(domain, data, nss, org){
 			output_format: "json",
 			lang: "en",
 			domain_name: domain,
+			period: period,
 			contacts: contacts,
 			nss: nss
 		})
@@ -458,7 +463,6 @@ RegRU.prototype.renew = function(domain, period){
 	request.post("https://api.reg.ru/api/regru2/service/renew", 
 	   {form: form}, function (error, res, body) {
 	   		if(error){ d.reject(error); }
-	   		//console.log(body);
 	   		d.resolve(body);
 	   }
 	);
