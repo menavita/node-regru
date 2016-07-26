@@ -398,7 +398,7 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 		input_format: "json",
 		username: this.username,
 		password: this.password,
-		//show_input_params: 1,
+		show_input_params: 1,
 		input_data: JSON.stringify({
 			io_encoding: "utf8",
 			output_format: "json",
@@ -406,7 +406,10 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 			domain_name: domain,
 			period: period,
 			contacts: contacts,
-			nss: nss
+			nss:{
+				ns1: nss[0],
+				ns0: nss[1]
+			}
 		})
 	};
 
