@@ -127,7 +127,7 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 				o_l_city_ru: data.o_l_city_ru,
 				o_l_postcode: data.o_l_postcode,
 				o_l_state: data.o_l_state,
-				o_l_state_ru: o_l_state_ru
+				o_l_state_ru: data.o_l_state_ru
 			};
 			
 		}
