@@ -265,7 +265,7 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 				o_email: data.o_email,
 				o_postcode: data.o_postcode,
 				o_country_code: data.o_country_code,
-				o_code: data.o_code,
+				//o_code: data.o_code,
 				o_birth_date: data.o_birth_date,
 				o_passport_date: data.o_passport_date,
 				o_passport_number: data.o_passport_number,
