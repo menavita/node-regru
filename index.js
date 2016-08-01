@@ -190,7 +190,7 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 				o_l_city_ru: data.o_l_city_ru,
 				o_l_postcode: data.o_l_postcode,
 				o_l_state: data.o_l_state,
-				o_l_state_ru: o_l_state_ru,
+				o_l_state_ru: data.o_l_state_ru,
 				a_first_name: data.a_first_name,
 				a_first_name_ru: data.a_first_name_ru,
 				a_last_name: data.a_last_name,
