@@ -36,8 +36,8 @@ RegRU.prototype.check = function(dname){
 		io_encoding: "utf8",
 		input_data: JSON.stringify(input_data),
 		show_input_params: 0,
-		username: "test",
-		password: "test"
+		username: this.username,
+		password: this.password
 	};
 
 	request.post("https://api.reg.ru/api/regru2/domain/check",

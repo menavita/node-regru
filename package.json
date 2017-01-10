@@ -9,7 +9,8 @@
   "author": "noglik",
   "license": "ISC",
   "dependencies": {
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "request": "^2.79.0"
   },
   "keywords": [
     "reg.ru",
