@@ -1,10 +1,14 @@
 {
   "name": "node-regru",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "JS library for reg.ru",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-check": "mocha --timeout 5000 test/check.js",
+    "test-create": "mocha --timeout 5000 test/create.js",
+    "test-renew": "mocha --timeout 5000 test/renew.js",
+    "test-getprices": "mocha --timeout 5000 test/getprices.js",
+    "test": "mocha --timeout 5000 test"
   },
   "author": "noglik",
   "license": "ISC",
@@ -15,5 +19,9 @@
   "keywords": [
     "reg.ru",
     "regru"
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.1.2"
+  }
 }

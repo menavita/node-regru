@@ -64,9 +64,78 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 		0: [ '.ru', '.su', '.рф'],
 		1: [ '.ru.net', '.com.ru', '.exnet.su'],
 		2: [ '.москва', '.moscow', '.дети', '.tatar'],
-		3: [ '.com', '.net', '.org', '.biz', '.name', '.info', '.mobi', '.uk', '.cc', '.tv', '.ws', '.bz', '.me', '.us', '.pro', '.lv', '.ro']
+		3: [ '.com', '.net', '.org', '.biz', '.name', '.info', '.mobi', '.uk', '.cc', 
+			 '.tv', '.ws', '.bz', '.me', '.us', '.pro', '.lv', '.ro', '.site', 
+			 '.rest','.academy', '.accountant', '.accountants', '.actor', 
+			 '.adult', '.aero', '.agency', '.airforce', '.apartments', '.associates', 
+			 '.attorney', '.auction', '.audio', '.auto', '.band', '.bar', '.bargains', 
+			 '.beer', '.best', '.bet', '.bid', '.bike', '.bingo', '.black', '.blackfriday', 
+			 '.blog', '.blue','.boutique', '.broker', '.build', '.builders', '.business', 
+			 '.buzz', '.bzh', '.cab', '.cafe', '.cam', '.camera', '.camp', '.capital', 
+			 '.car', '.cards', '.care', '.career', '.careers', '.cars', '.casa', '.cash', 
+			 '.casino', '.cat', '.catering','.center', '.chat', '.cheap', '.christmas', 
+			 '.church', '.city', '.claims', '.cleaning', '.click', '.clinic','.clothing', 
+			 '.cloud', '.club', '.coach', '.codes', '.coffee', '.college', '.community', 
+			 '.company', '.computer','.condos', '.construction', '.consulting', '.contractors', 
+			 '.cooking', '.cool', '.country', '.coupons', '.courses','.credit', '.creditcard', 
+			 '.cricket', '.cruises', '.dance', '.date', '.dating', '.deals', '.degree', 
+			 '.delivery', '.democrat','.dental', '.dentist', '.desi', '.design', '.diamonds', 
+			 '.diet', '.digital', '.direct', '.directory', '.discount', '.dog', '.domains', 
+			 '.download','.earth', '.education', '.email', '.energy', '.engineer', 
+			 '.engineering', '.enterprises', '.equipment', '.estate', '.eus', '.events', 
+			 '.exchange','.exnet.su', '.expert', '.exposed', '.express', '.fail', '.faith', 
+			 '.family', '.fans', '.farm', '.fashion', '.feedback', '.film', '.finance', 
+			 '.financial', '.fish', '.fishing', '.fit', '.fitness', '.flights', '.florist', 
+			 '.flowers', '.fm', '.football', '.forex', '.forsale','.foundation', '.frl', 
+			 '.fund', '.furniture', '.futbol', '.fyi', '.gallery', '.game', '.games', 
+			 '.garden', '.gent', '.gift', '.gifts', '.gives','.glass', '.global', '.gmbh', 
+			 '.gold', '.golf', '.graphics', '.gratis', '.green', '.gripe', '.group', 
+			 '.guide', '.guitars', '.guru','.haus', '.healthcare', '.help', '.hiphop', 
+			 '.hiv', '.hockey', '.holdings', '.holiday', '.horse', '.host', '.hosting', 
+			 '.house', '.how','.immo', '.immobilien', '.industries', '.ink', '.institute', 
+			 '.insure', '.international', '.investments', '.jetzt', '.jewelery', '.jobs', 
+			 '.juegos','.kaufen', '.kim', '.kitchen', '.kiwi', '.land', '.lawyer', 
+			 '.lease', '.legal', '.lgbt', '.life','.lighting', '.limited', '.limo', 
+			 '.link', '.live', '.loan','.loans', '.lol', '.love', '.ltd', '.ltda', 
+			 '.luxury', '.maison', '.management', '.market', '.marketing', '.markets', 
+			 '.mba', '.media', '.memorial', '.men', '.menu', '.mobi', '.moda','.moe', 
+			 '.mom', '.money', '.movie', '.network', '.ninja', '.one', '.onl', '.online', 
+			 '.ooo', '.partners', '.parts', '.party', '.pet', '.photo', '.photography', 
+			 '.photos', '.physio', '.pics','.pictures', '.pink', '.pizza', '.place', 
+			 '.plumbing', '.plus', '.poker', '.porn', '.press', '.pro', '.productions', 
+			 '.promo', '.properties', '.property', '.protection', '.pub','.qpon', 
+			 '.radio.am', '.radio.fm', '.racing', '.recipes', '.red', '.rehab', '.reisen', 
+			 '.rent', '.rentals', '.repair', '.report', '.rest', '.restaurant', '.reviews', 
+			 '.rip','.rocks', '.rodeo', '.run', '.sale', '.salon', '.sarl', '.school', 
+			 '.schule', '.science', '.security', '.services', '.sex', '.sexy', '.shiksha', 
+			 '.shoes', '.shop', '.shopping', '.show', '.singles', '.site', '.ski', '.soccer', 
+			 '.social', '.software', '.solar', '.solutions', '.soy', '.space', '.store', 
+			 '.stream', '.studio', '.study', '.sucks', '.supplies', '.supply', '.support', 
+			 '.surf', '.surgery', '.systems', '.tattoo', '.tax', '.taxi', '.team', '.tech', 
+			 '.technology', '.tel', '.tennis', '.theater', '.theatre', '.tienda', '.tips', 
+			 '.tires', '.today', '.tools', '.top', '.tours', '.town', '.toys', '.trade', 
+			 '.trading', '.training', '.travel', '.tube', '.tv', '.university', '.uno', 
+			 '.vacations', '.ventures', '.vet', '.viajes', '.video', '.villas', '.vin', 
+			 '.vip', '.vision', '.vodka', '.vote', '.voto', '.voyage', '.wang', '.watch', 
+			 '.webcam', '.website', '.wedding', '.whoswho', '.wiki', '.win', '.wine', 
+			 '.work', '.works', '.world', '.wtf', '.xxx', '.xyz', '.yoga', '.zone']
 	
 	};
+
+	var premiumdomain = ['.actor', '.airforce', '.band', '.bike', '.build', '.cam', 
+						 '.career', '.casa', '.center', '.click', '.clinic', '.cloud', 
+						 '.club', '.codes', '.consulting', '.country', '.courses', 
+						 '.dance', '.degree', '.dentist', '.diamonds', '.digital', 
+						 '.directory', '.email', '.engineer', '.equipment', '.exchange', 
+						 '.expert','.family','.fashion','.film','.fishing','.fit',
+						 '.forsale','.fui','.game','.garden','.glass','.gratis',
+						 '.gripe','.horse','.jewelery','.life','.limited','.live',
+						 '.love','.ltda','.management','.market','.network',
+						 '.ninja','.one','.photos','.productions','.rehab','.report'
+						 ,'.reviews','.rip','.zone','.work','.whoswho','.wedding',
+						 '.vodka','.video','.vet','.training','.tips','.technology',
+						 '.surf','.support','.supplies','.study','.studio','.solutions',
+						 '.software','.social','.ski','.sale','.rodeo'];
 
 	if(domainzone[0].indexOf(domain.substr(domain.indexOf("."))) != -1){// define domain zone
 		
@@ -390,6 +459,34 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 
 		}
 
+		if(domain.indexOf(".travel") != -1){
+
+			contacts.travel_uin = data.travel_uin;
+
+		}
+
+		if(domain.indexOf(".aero") != -1){
+
+			contacts.aero_ens_id = data.aero_ens_id;
+			contacts.aero_ens_p = data.aero_ens_p;
+
+		}
+
+		if((domain.indexOf(".attorney") != -1) || (domain.indexOf(".lawyer") != -1)){
+
+			contacts.regulatorybody = data.regulatorybody;
+
+		}
+
+		if(domain.indexOf(".jobs") != -1){
+
+			contacts.admin_type = data.admin_type;
+			contacts.company_url = data.company_url;
+			contacts.ind_classification = data.ind_classification;
+			contacts.tax_id = data.tax_id;
+
+		}
+
 	}
 
 
@@ -406,6 +503,7 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 			domain_name: domain,
 			period: period,
 			contacts: contacts,
+			//reg_premium: (premiumdomain.indexOf(domain.substr(domain.indexOf("."))) != -1) ? 1 : 0, 
 			nss:{
 				ns1: nss[0],
 				ns0: nss[1]
