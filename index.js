@@ -50,7 +50,7 @@ RegRU.prototype.check = function(dname){
 	return d.promise;
 }
 
-RegRU.prototype.create = function(domain, data, period, nss, org){
+RegRU.prototype.create = function(domain, data, period, ip, nss, org){
 
 	var contacts = {};
 	var d = Q.defer();
@@ -501,6 +501,7 @@ RegRU.prototype.create = function(domain, data, period, nss, org){
 			output_format: "json",
 			lang: "en",
 			domain_name: domain,
+			enduser_ip: ip,
 			period: period,
 			contacts: contacts,
 			//reg_premium: (premiumdomain.indexOf(domain.substr(domain.indexOf("."))) != -1) ? 1 : 0, 
