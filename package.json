@@ -1,6 +1,6 @@
 {
   "name": "node-regru",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JS library for reg.ru",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "test-getprices": "mocha --timeout 5000 test/getprices.js",
     "test": "mocha --timeout 5000 test"
   },
+  "repository": "github.com:Staronka/node-regru.git",
   "author": "noglik",
   "license": "ISC",
   "dependencies": {
