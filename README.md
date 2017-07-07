@@ -1,7 +1,7 @@
 # node-regru
 Library to reg.ru API(https://www.reg.ru/support/help/api2)
 
-##Usage
+## Usage
 
 ```javascript
 var RegRu = require("./node-regru");
@@ -15,17 +15,21 @@ regru.renew("test.ru",1).then(function(res){ });
 regru.getPrices("RUR").then(function(res){ });// RUR, USD, UAH, EUR
 ```
 
-##Domains for registration
+## Domains for registration
 
-###1 group
+### 0 group
 
 '.ru', '.su', '.рф'
 
-###2 group
+### 1 group
 
 '.ru.net', '.com.ru', '.exnet.su'
 
-###3 group
+### 2 group
+
+'.москва', '.moscow', '.дети', '.tatar'
+
+### 3 group
 
 '.com', '.net', '.org', '.biz', '.name', '.info', '.mobi', '.uk', '.cc', 
 '.tv', '.ws', '.bz', '.me', '.us', '.pro', '.lv', '.ro', '.site', 
@@ -83,7 +87,7 @@ regru.getPrices("RUR").then(function(res){ });// RUR, USD, UAH, EUR
 '.webcam', '.website', '.wedding', '.whoswho', '.wiki', '.win', '.wine', 
 '.work', '.works', '.world', '.wtf', '.xxx', '.xyz', '.yoga', '.zone'
 
-###Premium domains
+### Premium domains
 **We can't register premium domains**
 '.actor', '.airforce', '.band', '.bike', '.build', '.cam', 
 '.career', '.casa', '.center', '.click', '.clinic', '.cloud', 
@@ -100,8 +104,8 @@ regru.getPrices("RUR").then(function(res){ });// RUR, USD, UAH, EUR
 '.surf','.support','.supplies','.study','.studio','.solutions',
 '.software','.social','.ski','.sale','.rodeo'
 
-##Data samples
-###For 1 group
+## Data samples
+### For 0 group
 ```json
 "sms_security_number": "+7 927 1234567",
 "p_addr": "101000, Москва, ул.Пупкина, 1, стр. 2, отдел мебели,офис 433 (для В. Лоханкина)",
@@ -114,7 +118,7 @@ regru.getPrices("RUR").then(function(res){ });// RUR, USD, UAH, EUR
 "country": "RU"
 ```
 
-###For 2 group
+### For 1 group
 ```json
 "o_first_name": "Ivan",
 "o_first_name_ru": "Иван",
@@ -138,7 +142,7 @@ regru.getPrices("RUR").then(function(res){ });// RUR, USD, UAH, EUR
 "o_passport_place": "выдан 123 отделением милиции г.Москвы"
 ```
 
-###For 3 group
+### For 3 group
 ```json
 "o_company": "Private Person",
 "o_first_name": "Ivan",
@@ -192,7 +196,7 @@ regru.getPrices("RUR").then(function(res){ });// RUR, USD, UAH, EUR
 "b_postcode": "119002",
 "b_country_code": "RU"
 ```
-##Tests
+## Tests
 
 ```bash
 npm run test-check
