@@ -1,6 +1,6 @@
 {
   "name": "node-regru",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JS library for reg.ru",
   "main": "index.js",
   "scripts": {

@@ -3,11 +3,9 @@
 var request = require("request");
 var Q = require("q");
 
-function RegRU (username,password) {
-  
+function RegRU (username, password) {
   this.username = username;
   this.password = password;
-
 }
 
 RegRU.prototype.check = function(dname){
@@ -25,7 +23,7 @@ RegRU.prototype.check = function(dname){
 
 		input_data['domains'] = [];
 		dname.forEach(function(el) { 
-			input_data['domains'].push({"domain_name": el});
+			input_data['domains'].push({"dname": el});
 		});
 
 	}

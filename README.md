@@ -1,5 +1,5 @@
 # node-regru
-Library to reg.ru API(https://www.reg.ru/support/help/api2)
+Library for reg.ru API(https://www.reg.ru/support/help/api2)
 
 ## Usage
 
